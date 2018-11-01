@@ -82,6 +82,7 @@
                         @if (Route::has('contact'))
                             <a href="{{ route('contact') }}">Contact</a>
                         @endif
+
                         <!--<a href="{{ route('contact') }}">Contact</a>-->
 
                     @endauth
