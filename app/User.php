@@ -30,7 +30,7 @@ class User extends Authenticatable
 
     public function car()
     {
-      return $this->hasMany('App\Cars');
+      return $this->hasMany('App\Car');
     }
 
 }

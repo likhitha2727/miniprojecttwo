@@ -75,6 +75,15 @@
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+                        @if (Route::has('about'))
+                            <a href="{{ route('about') }}">About</a>
+                        @endif
+                        <!--<a href="{{ route('about') }}">About</a>-->
+                        @if (Route::has('contact'))
+                            <a href="{{ route('contact') }}">Contact</a>
+                        @endif
+                        <!--<a href="{{ route('contact') }}">Contact</a>-->
+
                     @endauth
                 </div>
             @endif
