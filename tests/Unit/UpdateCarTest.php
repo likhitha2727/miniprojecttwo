@@ -4,21 +4,18 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Car;
-class InsertCarTest extends TestCase
+class UpdateCarTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testInsertCars()
+    public function testUpdateCars()
     {
         //$this->assertTrue(true);
-        $user = new Car();
-        //$user->id=52;
-        $user->make='Toyota';
-        $user->model = 'car1';
-        $user->year = '2018';
+        $user = Car::find(2);
+        $user->year='2000';
         $this->assertTrue($user->save());
     }
 }
