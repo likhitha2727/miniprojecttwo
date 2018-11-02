@@ -3,22 +3,22 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\User;
-class InsertUserTest extends TestCase
+use App\Car;
+class InsertCarTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testInsert()
+    public function testInsertCars()
     {
         //$this->assertTrue(true);
-        $user = new User();
-        $user->id=51;
-        $user->name='likitha';
-        $user->password = 'likitha';
-        $user->email = 'likitha@example.com';
+        $user = new Car();
+        //$user->id=52;
+        $user->make='Toyota';
+        $user->model = 'car1';
+        $user->year = '2018';
         $this->assertTrue($user->save());
     }
 }
