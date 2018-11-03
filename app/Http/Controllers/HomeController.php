@@ -39,7 +39,7 @@ class HomeController extends Controller
         $name =$request->name;
         return redirect()->route('thanks',['name' => $name]);
     }
-    function thanks($name,Request $request)
+    function thanks($name)
     {
         return view('thanks')->with(compact('name'));
     }
